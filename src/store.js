@@ -3,20 +3,20 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 export default new Vuex.Store({
  state:{
-   products:[
-      {
-        name:"123",
-        price:100
-      },
-      {
-        name:"456",
-        price:120
-      },
-      {
-        name:"789",
-        price:1000
-      }
-   ],
+  //  products:[
+  //     {
+  //       name:"123",
+  //       price:100
+  //     },
+  //     {
+  //       name:"456",
+  //       price:120
+  //     },
+  //     {
+  //       name:"789",
+  //       price:1000
+  //     }
+  //  ],
    client:[
     {
       imgurl:"http://www.1000zhu.com/images/words.png",four:"搜索引擎",seo:"SEO 优化",cmo:"搜索引擎竞价",class:"c1"
@@ -58,6 +58,9 @@ export default new Vuex.Store({
      {text:"石家庄网站建设"},
      {text:"北京网站建设"},
      {title:"友情链接，携手共进"}
+   ],
+   lxfirst:[
+     {imgurl:"http://www.1000zhu.com/images/wechat_code.jpg",lxtext1:"工作日：4006123011 / 010-80757532",lxtext2:"非工作日：4006123011 / 18511639815",lxtext3:"科技园区：北京 · 中关村 · 昌发展",lxtext4:"办公地址：北京市昌发展万科广场A座6层",lxtextone:"官网：www.1000zhu.com",lxtexttwo:"Email：Service@1000zhu.com",lxtextthree:"千助网建科技（北京）有限公司",lxtextfour:"京ICP备 08102474 号",lxtextfive:"京公网安备 11010802010984 号"}
    ]
  },
  actions:{

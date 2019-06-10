@@ -9,6 +9,9 @@ import indexcss from '@/project/index.css'
 import lxtwo from '@/project/lxtwo'
 import index from '@/project/index'
 import indcss from '@/project/index.css'
+import lxone from '@/project/lxone.vue'
+import lxonecss from '@/project/lxone.css'
+
 
 
 Vue.use(Router)
@@ -17,11 +20,16 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'lxone',
+      component: lxone
+    },
+    {
+      path: '/index',
       name: 'index',
       component: index
     },
     {
-      path: '/',
+      path: '/lxtwo',
       name: 'lxtwo',
       component: lxtwo
     },
@@ -29,6 +37,6 @@ export default new Router({
       path: '/',
       name: 'client',
       component: client
-    },
+    }
   ]
 })

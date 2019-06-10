@@ -1,0 +1,80 @@
+.lxonebody{
+    background-image: url(http://www.1000zhu.com/images/wp8.jpg);
+    background-size: 100% 100%;
+    margin-top: 17px !important;
+    color: #333;
+    overflow: hidden;
+    position: absolute;
+    top: -17px;
+    width: 100%;
+    display: flex;
+}
+.lxone{
+    position: relative;
+    margin: auto;
+    width: 810px;
+    height: 330px;
+}
+.lx_above{
+    height: 180px;
+    animation:myfirst 1.5s;
+    animation-fill-mode:forwards;
+}
+@keyframes myfirst
+{
+	from {margin-top: -70%;}
+	to {margin-top:0;}
+}
+.lx_wechat{
+    float: left;
+}
+.lx_left{
+    float: left;
+    margin: -12px 0px 0px 70px;
+}
+.lx_left>div{
+    display: block;
+    margin: 10px 0px 15px 0px;
+    width: 243px;
+    height: 37px;
+    text-decoration: none;
+    background: url(http://www.1000zhu.com/images/words.png) no-repeat 0px -877px;
+    cursor: pointer;
+}
+.lx_left>p{
+    margin-top: 8px;
+    color: #666;
+    line-height: 26px;
+    font-size: 14px;
+}
+.lx_right{
+    float: right;
+    margin-top: -3px;
+    color: #666;
+    line-height: 32px;
+    font-size: 14px;
+}
+.lx_below{
+    position: relative;
+    padding-top: 50px;
+    width: 100%;
+    border-top: 1px dotted #ccc;
+    animation:mysecond 1.5s;
+    animation-fill-mode:forwards;
+}
+@keyframes mysecond
+{
+	from {margin-top: 170%;}
+	to {margin-top:0;}
+}
+.lx_below>i{
+    top: 0px;
+    opacity: 1;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 424px;
+    height: 86px;
+    background: url(http://www.1000zhu.com/images/words.png) no-repeat 0px -787px;
+    transition: all .6s ease-in-out 0s;
+}
