@@ -8,6 +8,7 @@
     top: -17px;
     width: 100%;
     display: flex;
+    user-select:none;
 }
 .lxone{
     position: relative;

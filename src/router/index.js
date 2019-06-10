@@ -20,13 +20,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'lxone',
-      component: lxone
-    },
-    {
-      path: '/index',
-      name: 'index',
-      component: index
+      name: 'client',
+      component: client
     },
     {
       path: '/lxtwo',
@@ -34,9 +29,14 @@ export default new Router({
       component: lxtwo
     },
     {
-      path: '/',
-      name: 'client',
-      component: client
+      path: '/lxone',
+      name: 'lxone',
+      component: lxone
+    },
+    {
+      path: '/index',
+      name: 'index',
+      component: index
     }
   ]
 })
