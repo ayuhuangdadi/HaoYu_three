@@ -147,7 +147,7 @@
 export default {
   methods:{
     goback(){
-      this.$router.push('/lxtwo')
+      this.$router.push('/')
     }
   }
 }
