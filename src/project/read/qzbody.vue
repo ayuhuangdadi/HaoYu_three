@@ -1,7 +1,12 @@
 <template>
     <div>
-        <ul>
-            <li v-for="qzactives in qzactive" :key="qzactives.index">
+        <el-table :data="qzactive.slice((currentPage-1)*pagesize,currentPage*pagesize)"
+         style="width: 100%"
+         stripe
+         :default-sort = "{prop: 'date', order: 'descending'}">
+        <ul class="bodyul">
+            <el-table-column porp="name">
+            <li class="bodyli" v-for="qzactives in qzactive" :key="qzactives.index">
                 <p>
                     <span>
                         {{qzactives.num}}
@@ -30,16 +35,49 @@
                     </span>
                 </p>
             </li>
+	        </el-table-column>
         </ul>
+        </el-table>
+            <el-pagination
+            background
+            layout="prev, pager, next"
+            @current-change="current_change"
+            :total="total">
+            </el-pagination>
     </div>
 </template>
 <script>
 import qzcss from "./qzleft.css"
 export default {
+    data(){
+        return {
+            total:150,//默认数据总数
+            pagesize:2,//每页的数据条数
+            currentPage:1,
+        }
+    },
     computed: {
         qzactive(){
             return this.$store.state.qzactive
-        }        
+        }
+    },
+    methods: {
+      tableRowClassName({row, rowIndex}) {
+        if (rowIndex === 0) {
+          return 'th';
+        }
+        return '';
+      },
+      switchChange(){
+          this.istag = !this.istag ;
+          
+      },
+      created:function(){
+         this.total=30;
+      },
+     current_change:function(currentPage){
+        this.currentPage = currentPage;
+      }
     }
 }
 </script>

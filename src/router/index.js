@@ -15,6 +15,7 @@ import app from '@/project/app'
 import qianzhuleft from '@/project/read/qianzhuleft'
 import qzbody from '@/project/read/qzbody'
 import error from '@/project/error/error'
+import somefy from '@/project/read/somefy'
 
 Vue.use(Router)
 
@@ -24,6 +25,16 @@ export default new Router({
       path: '/',
       name: 'qianzhuleft',
       component: qianzhuleft
+    },
+    {
+      path: '/',
+      name: 'qzbody',
+      component: qzbody
+    },
+    {
+      path: '/',
+      name: 'somefy',
+      component: somefy
     },
     {
       path: '/error',
@@ -44,11 +55,6 @@ export default new Router({
       path: '/lxone',
       name: 'lxone',
       component: lxone
-    },
-    {
-      path: '/qzbody',
-      name: 'qzbody',
-      component: qzbody
     },
     {
       path: '/index',

@@ -114,7 +114,24 @@ u{
     transition: all .3s ease-in-out 0s;
     overflow: hidden;
 }
-.qzbody>ul{
+.el-table__body-wrapper{
+    margin-top: -50px;
+}
+.el-table--enable-row-transition .el-table__body td{
+    background:#eff2f4;
+}
+.cell{
+    position: relative;
+    top: 0px;
+    left: 180px;
+    margin: 0px 60px;
+    margin-top: -40px;
+    padding: 0px;
+    background:#eff2f4;
+    list-style: none;
+    line-height: 32px !important;
+}
+.bodyul{
     position: relative;
     top: 0px;
     left: 240px;
@@ -123,12 +140,17 @@ u{
     padding: 0px;
     list-style: none;
 }
-.qzbody>ul>li{
+.bodyli:nth-of-type(1){
+    margin-top: 70px;
+
+}
+.bodyli{
+    margin-left: 60px;
     margin-bottom: 50px;
     height: 166px;
     width: 100%;
 }
-.qzbody>ul>li>p:nth-of-type(1)>span{
+.bodyli>p:nth-of-type(1)>span{
     display: block;
     float: left;
     width: 58px;
@@ -139,18 +161,18 @@ u{
     text-align: center;
     background: url(http://www.1000zhu.com/images/icons.png) no-repeat 0px -512px;
 }
-.qzbody>ul>li>p:nth-of-type(1)>span>u{
+.bodyli>p:nth-of-type(1)>span>u{
     display: block;
     margin-top: -5px;
     font-size: 16px;
     text-decoration: none;
 }
-.qzbody>ul>li>p:nth-of-type(1){
+.bodyli>p:nth-of-type(1){
     float: left;
     display: block;
     padding-right: 30px;
 }
-.qzbody>ul>li>p:nth-of-type(1)>img{
+.bodyli>p:nth-of-type(1)>img{
     display: block;
     float: left;
     margin-left: 12px;
@@ -159,7 +181,7 @@ u{
     background: White;
     cursor: pointer;
 }
-.qzbody>ul>li>p:nth-of-type(2){
+.bodyli>p:nth-of-type(2){
     display: block;
     float: left;
     transition: all .3s ease-in-out 0s;
@@ -270,4 +292,22 @@ body{
 .gly>a:hover{
     color: #2cc0a7;
     border-bottom: #2cc0a7 solid 1px;
+}
+.el-pagination{
+    position: relative;
+    top: -13px;
+    left: 240px;
+    height: 80px;
+    padding:30px 65px !important;
+    background-color: #eff2f4;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+    background-color: #2cc0a7 !important;
+}
+.number{
+    font-family: serif !important;
+    border: solid 1px #2cc0a7;
+}
+.el-pager li{
+    border-left: -1 !important;
 }
