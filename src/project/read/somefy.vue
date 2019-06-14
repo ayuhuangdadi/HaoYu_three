@@ -1,16 +1,16 @@
 <template>
         <div class="title">
-            <!-- <span>总数量：3223个</span> -->
-            <!-- <el-button  icon="el-icon-setting" class="fl">操作</el-button> -->
-            <!-- <el-select v-model="value5" multiple placeholder="标记" class="fl">
+            <span>总数量：3223个</span>
+            <el-button  icon="el-icon-setting" class="fl">操作</el-button>
+            <el-select v-model="value5" multiple placeholder="标记" class="fl">
                 <el-option
                   v-for="item in options"
                   :key="item.value"
                   :label="item.label"
                   :value="item.value">
                 </el-option>
-            </el-select> -->
-            <!-- <el-select v-model="value5" multiple placeholder="筛选项" class="fl">
+            </el-select>
+            <el-select v-model="value5" multiple placeholder="筛选项" class="fl">
                 <el-option
                   v-for="item in options"
                   :key="item.value"
@@ -24,7 +24,7 @@
                     prefix-icon="el-icon-search"
                     v-model="input21">
                   </el-input>
-            </div> -->
+            </div>
             <div class="container_table">
                 <el-table 
                 :data="tableData.slice((currentPage-1)*pagesize,currentPage*pagesize)"
@@ -71,13 +71,13 @@
                   sortable
                   label="下载量（万）">
                 </el-table-column>
-                <!-- <el-table-column label="操作">
+                <el-table-column label="操作">
                   <template slot-scope="scope">
                      <el-button type="warning" icon="el-icon-star-off" circle></el-button>
                      <el-button type="primary" icon="el-icon-star-on" v-if="istag" @click='switchChange'></el-button>
                      <el-button type="primary" icon="el-icon-star-off" v-else="!istag" @click='switchChange'></el-button>
                   </template>
-                </el-table-column> -->
+                </el-table-column>
              </el-table>
                   <el-pagination class="fy"
                      layout="prev, pager, next"
