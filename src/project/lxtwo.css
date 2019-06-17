@@ -1,11 +1,8 @@
 .bgColor{
     background: url('http://www.1000zhu.com/images/wp3.jpg') no-repeat center;
     background-size: 100% 100%;
-    margin-top: 17px !important;
     color: #333;
     overflow: hidden;
-    position: absolute;
-    top: -17px;
     width: 100%;
     user-select:none;
 }

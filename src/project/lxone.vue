@@ -58,7 +58,8 @@ export default {
 			this.get_bodyHeight()
 		},
 		methods :{
-			get_bodyHeight () {//动态获取浏览器高度
+			//动态获取浏览器高度
+			get_bodyHeight () {
 				const that = this
 				window.onresize = () => {
 					return (() => {

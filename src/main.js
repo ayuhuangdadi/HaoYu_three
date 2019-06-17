@@ -7,10 +7,12 @@ import store from './store.js'
 import $ from 'jquery'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import iView from 'iview';
+import 'iview/dist/styles/iview.css';
 
 Vue.config.productionTip = false
 Vue.use(ElementUI);
-
+Vue.use(iView);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

@@ -1,11 +1,8 @@
 .lxonebody{
     background-image: url(http://www.1000zhu.com/images/wp8.jpg);
     background-size: 100% 100%;
-    margin-top: 17px !important;
     color: #333;
     overflow: hidden;
-    position: absolute;
-    top: -17px;
     width: 100%;
     display: flex;
     user-select:none;

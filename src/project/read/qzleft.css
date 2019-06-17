@@ -191,6 +191,7 @@ u{
 }
 .summary{
     display: block;
+    font-size:14px;
     margin-top: 15px;
     height: 60px;
     color: #555;
@@ -255,7 +256,7 @@ body{
 }
 .gly>i{
     position: relative;
-    top: 1px;
+    top: -1px;
     display: inline-block;
     font-family: 'Glyphicons Halflings';
     font-style: normal;

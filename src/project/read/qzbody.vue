@@ -23,10 +23,12 @@
                         {{qzactives.fuck}}
                     </span>
                     <span class="gly">
-                        <i class="el-icon-price-tag"></i>
+                        <i><Icon type="ios-pricetag" /></i>
                         <a href="#">{{qzactives.tx1}}</a>
                         <a href="#">{{qzactives.tx2}}</a>
                         <a href="#">{{qzactives.tx3}}</a>
+                        <a href="#">{{qzactives.tx4}}</a>
+                        <a href="#">{{qzactives.tx5}}</a>
                     </span>
                 </p>
             </li>
@@ -45,7 +47,7 @@ export default {
     data(){
         return {
             total:150,//默认数据总数
-            pagesize:9,//每页的数据条数
+            pagesize:10,//每页的数据条数
             currentPage:1,
         }
     },
